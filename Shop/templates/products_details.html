@@ -1,0 +1,18 @@
+{% extends 'base.html'%}
+{% block content%}
+{% load cart%}
+<div class="container my-5">
+    <div class="row">
+        <div class="col-lg-7">
+        <img class="card-img-top" src="{{product.image.url}}" alt="Card image cap">
+    </div>
+    <div class="col-lg-5">
+        <div class="card-body">
+                <h5 class="card-title mb-2">{{product.name}}</h5>
+            <p class="card-text text-success"><b>Rs. {{product.price}}</b></p>
+                <p class="card-text"><b>Description:</b>{{product.description}}</p>
+               </div>
+    </div>
+    </div>
+</div>
+{% endblock %}
